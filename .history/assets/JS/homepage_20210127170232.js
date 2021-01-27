@@ -7,8 +7,8 @@ var getUserRepos = function(user) {
     fetch(apiURL).then(function(response) {
         response.json().then(function(data) {
             console.log(data);
-        });
-    });
+        })
+    })
     
     
     

@@ -5,15 +5,13 @@ var getUserRepos = function(user) {
 
     // Make a request to the URL
     fetch(apiURL).then(function(response) {
-        response.json().then(function(data) {
-            console.log(data);
-        });
-    });
+        response.json().then
+    })
     
     
     
-    // Original code coincided to test the url before making it more generic to search for any user.
-    /* fetch("https://api.github.com/users/octocat/repos").then(function(response) {
+    
+    /* octocat/repos").then(function(response) {
         response.json().then(function(data) {
         console.log(data);
         });
