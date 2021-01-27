@@ -56,18 +56,7 @@ var displayRepos = function(repos, searchTerm) {
         var repoName = repos[i].owner.login + "/" + repos[i].name;
 
         // Create a container for each repo
-        var repoEl = document.createElement("div");
-        repoEl.classList = "list-item flex-row justify-space-between align-center";
-
-        // Create a span element to hold repository name
-        var titleEl = document.createElement("span");
-        titleEl.textContent = repoName;
-
-        // Append to container
-        repoEl.appendChild(titleEl);
-
-        // Append container to DOM
-        repoContainerEl.appendChild(repoEl);
+        var repoEl
     }
 };
 

@@ -61,13 +61,7 @@ var displayRepos = function(repos, searchTerm) {
 
         // Create a span element to hold repository name
         var titleEl = document.createElement("span");
-        titleEl.textContent = repoName;
-
-        // Append to container
-        repoEl.appendChild(titleEl);
-
-        // Append container to DOM
-        repoContainerEl.appendChild(repoEl);
+        titleEl.textContent = repoName
     }
 };
 

@@ -66,8 +66,7 @@ var displayRepos = function(repos, searchTerm) {
         // Append to container
         repoEl.appendChild(titleEl);
 
-        // Append container to DOM
-        repoContainerEl.appendChild(repoEl);
+        // Append 
     }
 };
 

@@ -64,10 +64,7 @@ var displayRepos = function(repos, searchTerm) {
         titleEl.textContent = repoName;
 
         // Append to container
-        repoEl.appendChild(titleEl);
-
-        // Append container to DOM
-        repoContainerEl.appendChild(repoEl);
+        repoEl.appendChild(ti)
     }
 };
 
