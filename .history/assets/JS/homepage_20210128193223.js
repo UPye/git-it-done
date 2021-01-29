@@ -21,10 +21,9 @@ var getUserRepos = function(user) {
                 alert("Error: " + response.statusText);
             }
         })
-
-        .catch(function(error) {
+        .catch(fucntion(error) {
             // Notice this `.catch()` getting chained onto the end of the `.then()`
-            alert("Unable to connect to GitHub");
+            alert("");
         });
     
     

@@ -9,7 +9,7 @@ var getUserRepos = function(user) {
     var apiURL = "https://api.github.com/users/" + user + "/repos";
 
     // Make a request to the URL
-    fetch(apiURL)
+    fetch(apiURL).then(function(response) {
         .then(function(response) {
             // Request was successful
             if (response.ok) {
@@ -21,11 +21,9 @@ var getUserRepos = function(user) {
                 alert("Error: " + response.statusText);
             }
         })
-
-        .catch(function(error) {
+        .catch(fucntion(error) {
             // Notice this `.catch()` getting chained onto the end of the `.then()`
-            alert("Unable to connect to GitHub");
-        });
+        })
     
     
     
