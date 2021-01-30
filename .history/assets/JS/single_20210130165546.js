@@ -30,6 +30,8 @@ var getRepoIssues = function(repo) {
             else {
                 alert("There was a problem with your request!");
             }
+
+            repoName();
         });
 };
 

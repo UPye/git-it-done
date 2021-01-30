@@ -6,8 +6,7 @@ var repoNameEl = document.querySelector("#repo-name");
 var getRepoName = function() {
     var queryString = document.location.search;
     var repoName = queryString.split("=")[1];
-    getRepoIssues(repoName);
-    repoNameEl.textContent = repoName;
+    getRepoIssues
 }
 
 
@@ -30,6 +29,8 @@ var getRepoIssues = function(repo) {
             else {
                 alert("There was a problem with your request!");
             }
+
+            repoName();
         });
 };
 
