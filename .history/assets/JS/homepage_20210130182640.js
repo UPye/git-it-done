@@ -131,7 +131,7 @@ var buttonClickHandler = function(event) {
         getFeaturedRepos(language);
 
         // Clear old content
-        repoContainerEl.textContent = "";
+        repo
     }
 };
 

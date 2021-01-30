@@ -127,12 +127,8 @@ var displayRepos = function(repos, searchTerm) {
 
 var buttonClickHandler = function(event) {
     var language = event.target.getAttribute("data-language");
-    if (language) {
-        getFeaturedRepos(language);
-
-        // Clear old content
-        repoContainerEl.textContent = "";
-    }
+    if (language)
+    getFeaturedRepos(data-language);
 };
 
 languageButtonsEl.addEventListener("click", buttonClickHandler);

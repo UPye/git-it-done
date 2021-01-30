@@ -130,8 +130,7 @@ var buttonClickHandler = function(event) {
     if (language) {
         getFeaturedRepos(language);
 
-        // Clear old content
-        repoContainerEl.textContent = "";
+        
     }
 };
 
