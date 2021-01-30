@@ -39,7 +39,7 @@ var getRepoIssues = function(repo) {
                 });
             }
             else {
-                // If not successful, redirect to the homepage
+                
                 document.location.replace("./index.html");
             }
         });

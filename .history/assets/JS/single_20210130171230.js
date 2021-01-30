@@ -23,7 +23,7 @@ var getRepoName = function() {
 
 var getRepoIssues = function(repo) {
     var apiUrl = "https://api.github.com/repos/" + repo + "/issues?direction=asc";
-    // Make a get request to URL
+    // Make a get 
     fetch(apiUrl)
         .then(function(response) {
             // Request was successful
@@ -39,7 +39,6 @@ var getRepoIssues = function(repo) {
                 });
             }
             else {
-                // If not successful, redirect to the homepage
                 document.location.replace("./index.html");
             }
         });

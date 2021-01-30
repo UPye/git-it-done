@@ -14,16 +14,13 @@ var getRepoName = function() {
         getRepoIssues(repoName);
     }
     else {
-
-        // If no repo was given, redirect to homepage
         document.location.replace("./index.html");
     }
-};
+}
 
 
 var getRepoIssues = function(repo) {
     var apiUrl = "https://api.github.com/repos/" + repo + "/issues?direction=asc";
-    // Make a get request to URL
     fetch(apiUrl)
         .then(function(response) {
             // Request was successful
@@ -39,8 +36,7 @@ var getRepoIssues = function(repo) {
                 });
             }
             else {
-                // If not successful, redirect to the homepage
-                document.location.replace("./index.html");
+                alert("There was a problem with your request!");
             }
         });
 };
